@@ -9,17 +9,17 @@ public class Test {
     public static void main( String[] args ) {
 
 
-        String command = "ls";
-        String userName = "weilai";
-        String password = "lab123";
+        String command = "scm";
+        String userName = "admin";
+        String password = "lab";
         String connectionIP = "10.124.8.15";
         int channelUrate = 0;
         int channelDrate = 0;
 
-        ArrayList<String> cmList = new ArrayList<String>();
+      
         SSHManager instance = new SSHManager(userName, password, connectionIP, "");
         String errorMessage = instance.connect();
-        //System.out.println(errorMessage);
+        System.out.println(errorMessage);
 
         try {
             instance.connect();
@@ -29,7 +29,7 @@ public class Test {
 
 
             }catch (Exception e){
-
+             System.out.println(e );
 
         }
 
